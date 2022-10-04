@@ -6,14 +6,16 @@
   --white-text-color: #ffffff;
   --footer-text-color-tel-mail: rgba(255, 255, 255, 0.6);
   --primary-background-color: #f5f5f5;
+  --product-overlay: rgba(33, 150, 243, 0.9);
   --footer-hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
-  --team-list-background-color: #ffffff;
   --hover-hero-button: #188ce8;
   --border-bottom-header: #cecece;
   --border-card-portfolio: #eeeeee;
   --overlay-background-color: #c4c4c4;
   --fill-svg-color: #afb1b8;
+  --linear-gradient-color: rgba(47, 48, 58, 0.4);
+  --services-list-overlay: rgba(47, 48, 58, 0.8);
   --timing-cubic-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
@@ -183,7 +185,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, var(--linear-gradient-color), var(--linear-gradient-color)),
     url(../images/hero.jpg);
   background-position: center;
   background-color: var(--overlay-background-color);
@@ -277,7 +279,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--services-list-overlay);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +294,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   width: 100%;
 }
 .team-list__item {
-  background-color: var(--team-list-background-color);
+  background-color: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -330,7 +332,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--team-list-background-color);
+  background-color: var(--white-text-color);
   border-radius: 50%;
   fill: var(--fill-svg-color);
   transition: var(--timing-cubic-bezier);
@@ -490,7 +492,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   left: 50%;
   width: 528px;
   height: 581px;
-  background-color: var(--team-list-background-color);
+  background-color: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -550,9 +552,9 @@ border-bottom: 1px solid var(--border-bottom-header);
   transition: border-color var(--timing-cubic-bezier);
 }
 .form-modal__input:focus {
-  border-color: var(--accent-color);
+border-color: var(--accent-color);
 }
-.form-modal__input:focus + .form-modal__icon {
+.form-field:focus-within .form-modal__icon {
   fill: var(--accent-color);
 }
 .form-modal__coment{
@@ -709,7 +711,7 @@ color: var(--accent-color);
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--product-overlay);
 
   font-size: 18px;
   line-height: 1.55;

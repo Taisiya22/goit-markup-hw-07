@@ -316,7 +316,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   margin-top: 10px;
   text-align: center;
 }
-.social__list {
+.social-list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -424,15 +424,15 @@ border-bottom: 1px solid var(--border-bottom-header);
 }
 
 /* footer-sign-form */
-.footer_button {
+.sign-form__button {
   min-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
 }
-.footer__button:hover,
-.footer__button:focus {
+.sign-form__button:hover,
+.sign-form__button:focus {
   background-color: var(--hover-hero-button);
 }
 .footer__button:active {

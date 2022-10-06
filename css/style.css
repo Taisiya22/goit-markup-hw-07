@@ -404,7 +404,7 @@ border-bottom: 1px solid var(--border-bottom-header);
 .address-link:focus {
   color: var(--accent-color);
 }
-.contact-list__link {
+.contact__link {
   color: var(--footer-text-color-tel-mail);
 }
 /* footer-social-list */

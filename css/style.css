@@ -262,7 +262,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   line-height: 1.71;
 }
 /* section services */
-.services-section {
+.services {
   padding-top: 0;
 }
 .services__list {
@@ -376,7 +376,7 @@ border-bottom: 1px solid var(--border-bottom-header);
   padding: 60px 0px;
   background-color: var(--footer-hero-background-color);
 }
-.footer-box {
+.footer__box {
   display: flex;
   align-items: baseline;
 }
@@ -392,7 +392,7 @@ border-bottom: 1px solid var(--border-bottom-header);
 .address {
   margin-top: 20px;
 }
-.address-list__item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .address__link {
@@ -446,10 +446,8 @@ color: var(--accent-color);
 .sign-form__button:focus {
   background-color: var(--hover-hero-button);
 }
-.footer__button:active {
-  background-color: var(--hover-hero-button);
-}
-.button__icon {
+
+.sign-form__icon {
   margin-left: 10px;
 }
 .sign-form {
@@ -534,7 +532,7 @@ color: var(--accent-color);
   fill: var(--accent-color);
 }
 /* form */
-.modal__title {
+.form-modal__title {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -565,7 +563,7 @@ color: var(--accent-color);
 .form-modal__input:focus {
 border-color: var(--accent-color);
 }
-.form-field:focus-within .form-modal__icon {
+.form-modal__field:focus-within .form-modal__icon {
   fill: var(--accent-color);
 }
 .form-modal__coment{
@@ -674,7 +672,7 @@ color: var(--accent-color);
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio__list {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

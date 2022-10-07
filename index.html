@@ -109,7 +109,7 @@
         </div>
       </section>
       <!--секція послуги-->
-      <section class="services-section section">
+      <section class="services section">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="services__list list">
@@ -365,7 +365,7 @@
     </main>
     <!--футер-->
     <footer class="footer">
-      <div class="container footer-box">
+      <div class="container footer__box">
         <div>
           <a href="" class="logo footer__logo"><span class="logo__prepend">Web</span>Studio</a>
           <address class="address">
@@ -375,7 +375,7 @@
                   >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="contact__item">
+              <li class="address__item">
                 <a href="mailto:info@devstudio.com" class="contact__link">info@devstudio.com</a>
               </li>
               <li class="item"><a href="tel:+380961111111" class="contact__link">+38 096 111 11 11</a></li>
@@ -422,7 +422,7 @@
             </label>
             <button class="button sign-form__button" type="submit">
               Підписатися
-              <svg class="button__icon" width="24" height="24">
+              <svg class="sign-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -433,24 +433,24 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="form-modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="form-modal">
             <label class="form-modal__label" for="name">Ім'я</label>
-            <div class="form-field">
+            <div class="form-modal__field">
               <input class="form-modal__input" type="text" name="user-name" id="name" required/>
               <svg width="18" height="18" class="form-modal__icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
           </div>
             <label class="form-modal__label" for="tel">Телефон</label>
-            <div class="form-field">
+            <div class="form-modal__field">
               <input class="form-modal__input" type="text" name="tel" id="tel" required/>
               <svg width="18" height="18" class="form-modal__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
           </div>
           <label for="mail" class="form-modal__label">Пошта</label>
-          <div class="form-field">
+          <div class="form-modal__field">
             <input class="form-modal__input" type="email" name="email" id="mail" />
             <svg width="18" height="18" class="form-modal__icon">
               <use href="./images/icons.svg#icon-email-black"></use>

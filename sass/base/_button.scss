@@ -12,13 +12,13 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     transition: var(--timing-cubic-bezier);
+    &:hover,
+    &:focus {
+            background-color: var(--hover-hero-button);
+        }
+    
+        &:active {
+            background-color: var(--hover-hero-button);
+        }
 }
 
-.button:hover,
-.button:focus {
-    background-color: var(--hover-hero-button);
-}
-
-.button:active {
-    background-color: var(--hover-hero-button);
-}

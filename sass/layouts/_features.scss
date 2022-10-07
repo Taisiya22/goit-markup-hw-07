@@ -7,11 +7,12 @@
             width: 270px;
         }
     
-        .features__item:not(:last-child) {
-            margin-right: 30px;
-        }
+        &__item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }}
     
-        .features__icon {
+        &__icon {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -21,11 +22,11 @@
             background-color: var(--team-background-color);
         }
     
-        .features__title {
+        &__title {
             color: var(--primary-text-color);
         }
     
-        .features__description {
+        &__description {
             margin-top: 10px;
             color: var(--secondary-text-color);
             line-height: 1.71;

@@ -393,19 +393,28 @@ border-bottom: 1px solid var(--border-bottom-header);
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-link {
+.address__link {
+  font-style: normal ;
   color: var(--white-text-color);
-  font-style: normal;
   line-height: 1.71;
   text-decoration: none;
   transition: var(--timing-cubic-bezier);
 }
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
 .contact__link {
-  color: var(--footer-text-color-tel-mail);
+  font-style: normal;
+    color: var(--footer-text-color-tel-mail);
+    line-height: 1.71;
+    text-decoration: none;
+    transition: var(--timing-cubic-bezier);
+  }
+  
+.contact__link:hover,
+.contact__link:focus {
+color: var(--accent-color);
 }
 /* footer-social-list */
 .footer-social {

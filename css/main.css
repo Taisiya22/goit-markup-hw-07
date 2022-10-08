@@ -1,4 +1,6 @@
 :root {
+  --primary-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -55,7 +57,7 @@ ul {
 body {
   background-color: var(--white-text-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -117,7 +119,7 @@ body {
 .logo {
   padding: 25px 0px;
   color: var(--black-text-color);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -696,7 +698,6 @@ body {
           transform: scale(0.8) translate(-50%, -50%);
 }
 
-/* form */
 .modal {
   position: absolute;
   top: 50%;
@@ -715,6 +716,18 @@ body {
   transition: opacity var(--timing-cubic-bezier), -webkit-transform var(--timing-cubic-bezier);
   transition: transform var(--timing-cubic-bezier), opacity var(--timing-cubic-bezier);
   transition: transform var(--timing-cubic-bezier), opacity var(--timing-cubic-bezier), -webkit-transform var(--timing-cubic-bezier);
+}
+.modal__button {
+  margin: 30px auto 40px auto;
+  min-width: 200px;
+  height: 50px;
+  padding: 0;
+}
+.modal__button:hover, .modal__button:focus {
+  background-color: var(--hover-hero-button);
+}
+.modal__button:active {
+  background-color: var(--hover-hero-button);
 }
 
 .form-modal {
@@ -753,9 +766,6 @@ body {
 }
 .form-modal__input:focus {
   border-color: var(--accent-color);
-}
-.form-modal .form-modal__field:focus-within .form-modal__icon {
-  fill: var(--accent-color);
 }
 .form-modal__coment {
   outline: none;
@@ -807,14 +817,16 @@ body {
   height: 40px;
   margin-bottom: 10px;
 }
-.form-modal .form-modal__icon {
+.form-modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
+.form-modal__field:focus-within .form-modal__icon {
+  fill: var(--accent-color);
+}
 .form-modal__button--close {
   position: absolute;
   top: 8px;
@@ -869,17 +881,4 @@ body {
 .checbox__link {
   line-height: 1.71;
   color: var(--accent-color);
-}
-
-.modal__button {
-  margin: 30px auto 40px auto;
-  min-width: 200px;
-  height: 50px;
-  padding: 0;
-}
-.modal__button:hover, .modal__button:focus {
-  background-color: var(--hover-hero-button);
-}
-.modal__button:active {
-  background-color: var(--hover-hero-button);
 }/*# sourceMappingURL=main.css.map */

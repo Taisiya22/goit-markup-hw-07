@@ -26,27 +26,34 @@
             letter-spacing: 0.02em;
             text-decoration: none;
             transition: var(--timing-cubic-bezier);
-        }
-                &__link {
+
+            
                     &:hover,
                     &:focus {
-                        color: var(--accent-color);}
-                }
-&__link--current {
-    position: relative;
-    color: var(--accent-color);
-}
-&__link--current {
-    &::after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        bottom: -1px;
-        background: var(--accent-color);
-        border-radius: 2px;}
-}
+                        color: var(--accent-color);
+                    }
+
+                                        &--current {
+                                            position: relative;
+                                            color: var(--accent-color);
+                                        }
+                    
+                                        &--current {
+                                            &::after {
+                                                position: absolute;
+                                                content: '';
+                                                display: block;
+                                                width: 100%;
+                                                height: 4px;
+                                                bottom: -1px;
+                                                background: var(--accent-color);
+                                                border-radius: 2px;
+                                            }
+                                        }
+                
+        }
+               
+
 }
 
 
@@ -70,14 +77,17 @@
             line-height: 1.14;
             letter-spacing: 0.02em;
             text-decoration: none;
-        }
-                &__link {
+
+            
                     &:hover,
                     &:focus {
                         color: var(--accent-color);
                         fill: var(--accent-color);
-                        transition: var(--timing-cubic-bezier);}
-                }
+                        transition: var(--timing-cubic-bezier);
+                    }
+                
+        }
+               
                                 &__icon {
                                     margin-right: 10px;
                                 }

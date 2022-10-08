@@ -1,7 +1,5 @@
 
 
-/* form */
-
 .modal {
     position: absolute;
     top: 50%;
@@ -17,6 +15,22 @@
     transform: scale(1) translate(-50%, -50%);
     transition: transform var(--timing-cubic-bezier),
         opacity var(--timing-cubic-bezier);
+
+        &__button {
+                margin: 30px auto 40px auto;
+                min-width: 200px;
+                height: 50px;
+                padding: 0;
+        
+                &:hover,
+                &:focus {
+                    background-color: var(--hover-hero-button);
+                }
+        
+                &:active {
+                    background-color: var(--hover-hero-button);
+                }
+            }
 
 }
 
@@ -57,9 +71,7 @@
             border-color: var(--accent-color);
         }
     
-        .form-modal__field:focus-within .form-modal__icon {
-            fill: var(--accent-color);
-        }
+        
     
         &__coment {
             outline: none;
@@ -90,34 +102,40 @@
             margin-bottom: 10px;
         }
     
-        .form-modal__icon {
+        &__icon {
             position: absolute;
             top: 50%;
             left: 12px;
             transform: translateY(-50%);
+
+            .form-modal__field:focus-within & {
+                    fill: var(--accent-color);
+                }
         }
+
+                &__button--close {
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    background-color: var(--white-text-color);
+                    transition: transform var(--timing-cubic-bezier);
+                    cursor: pointer;
+        
+                    &:hover,
+                    &:focus {
+                        fill: var(--accent-color);
+                    }
+                }
 }
 
-.form-modal__button--close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--white-text-color);
-    transition: transform var(--timing-cubic-bezier);
-    cursor: pointer;
 
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-    }
-}
 .checkbox__icon--start {
     opacity: 1;
 }
@@ -146,19 +164,5 @@
     color: var(--accent-color);
 }
 
-.modal__button {
-    margin: 30px auto 40px auto;
-    min-width: 200px;
-    height: 50px;
-    padding: 0;
 
-    &:hover,
-    &:focus {
-            background-color: var(--hover-hero-button);
-        }
-    
-    &:active {
-            background-color: var(--hover-hero-button);
-        }
-}
 

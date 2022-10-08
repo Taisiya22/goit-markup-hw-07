@@ -18,12 +18,14 @@
             border-radius: 50%;
             fill: var(--fill-svg-color);
             transition: var(--timing-cubic-bezier);
-        }
-                &__link:hover,
-                &__link:focus {
+
+            &:hover,
+            &:focus {
                     background-color: var(--accent-color);
                     fill: var(--white-text-color);
                 }
+        }
+               
 }
 
 

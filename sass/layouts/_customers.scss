@@ -20,13 +20,15 @@
         height: 100%;
         fill: var(--fill-svg-color);
         transition: var(--timing-cubic-bezier);
+
+        &:hover,
+        &:focus {
+                fill: var(--accent-color);
+                border: 1px solid var(--accent-color);
+            }
     }
 
-        &__link:hover,
-        &__link:focus {
-            fill: var(--accent-color);
-            border: 1px solid var(--accent-color);
-        }
+        
 }
 
 
